@@ -10,7 +10,7 @@ html{
     scroll-behavior: smooth;           
 }
 .background{
-    background: rgba(0, 0,0, 0.7) url('anthrfash.jpg'); 
+    background: rgba(0, 0,0, 0.7) url("/images/anthrfash.jpg"); 
     background-size: cover;
     background-blend-mode:darken ;
 }
