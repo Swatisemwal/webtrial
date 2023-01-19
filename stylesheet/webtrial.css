@@ -57,8 +57,6 @@ align-items: center;
     
 }
 .nav-list li:hover{
-    /* list-style: none;
-    padding: 0 23px; */
     cursor: pointer;
     font-weight: bolder;
     
@@ -127,10 +125,13 @@ align-items: center;
 
 .big-text{
     font-size: 37px;
+ font-family: 'Raleway', sans-serif;
+
 }
 .small-text {
     font-size: 16px;
     margin: 3px;
+    line-height: 22px;
 }
 .btn{
     padding: 9px 12px;
@@ -161,7 +162,141 @@ align-items: center;
     cursor: pointer;
     font-weight: bold;
 }
+.footer{
+    background-color:#9b8989;
+    display: flex;
+    justify-content: center;
+}
 
+
+.tank{
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     background: white;
+    height: 55vh;
+    width: 27vw;
+    text-align: center;
+    border-radius: 40px;
+
+}
+
+
+.phara{
+    font-size: 30px;
+    padding-top: 12px;
+ 
+    font-family: 'Ubuntu', sans-serif;
+}
+.inp-text{
+    margin: 6px 0px;
+    padding-left: 7px;
+    height: 25px;
+    width: 313px;
+    border-radius: 6px;
+    border: 2px solid #9b8989;
+    font-family: 'Ubuntu', sans-serif;
+}
+.inp-text:hover{
+    box-shadow: 5px 8px 3px 3px #e9bac2;
+     cursor: pointer;
+     font-size:20px ;
+}
+#text-part{
+    padding-left: 7px;
+    margin: 3px 0px;
+}   
+#text-part:hover{
+     box-shadow: 3px 3px 3px 3px #e9bac2;
+     cursor: pointer;
+    
+    }
+#btn{
+    height: 37px;
+    width: 83px;
+    border-radius: 9px;
+    background: none;
+    color: white;
+    background-color: #e9bac2;
+    border: 2px solid white;
+}
+#btn:hover{
+    box-shadow: 2px 2px 2px 2px #e9bac2;
+    cursor: pointer;
+}
+
+
+/* media query for responsive */
+@media  only screen and (max-width:1300px) {
+    .box{
+        width: 57vw;
+       height: 45vh;
+    }
+    .inp-text{
+        width: 50vw;
+     margin: 15px 0px;
+     height: 50px;
+
+    }
+    #text-part{
+        height: 15vh;
+        width: 30vw;
+    }
+
+}
+@media  only screen and (max-width:1150px) {
+    .box{
+        width: 354px;
+        height: 39vh;
+    }
+    .inp-text{
+        width: 215px;
+    margin: 5px 0px;
+
+    }
+    #text-part{
+        height: 105px;
+
+    }
+}
+
+@media  only screen and (max-width:600px) {
+    .box{
+        width: 65vw;
+       height: 45vh;
+    }
+    .inp-text{
+        width: 50vw;
+     margin: 10px 0px;
+     height: 50px;
+
+    }
+    #text-part{
+        height: 15vh;
+        width: 30vw;
+    }
+
+}
+@media only screen and (max-width:800px){
+    #search{
+        width: 40vw;
+       }
+    
+    .box{
+        height: 30vh;
+    }
+    
+}
 @media only screen and (max-width:1140px) {
     .nav-list{
         flex-direction: column;
@@ -219,89 +354,3 @@ align-items: center;
    }
   
 }
-
-
-@media only screen and (max-width:800px){
-#search{
-    width: 40vw;
-   }
-}
-
-
-
-.tank{
-    background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-}
-
-.box{
-    background: white;
-    height: 70%;
-    width: 30vw;
-    text-align: center;
-    border-radius: 40px;
-
-}
-.phara{
-    font-size: 30px;
-    padding-top: 12px;
- 
-    font-family: 'Ubuntu', sans-serif;
-}
-.inp-text{
-    margin: 18px 0px;
-    padding-left: 7px;
-    height: 25px;
-    width: 313px;
-    border-radius: 6px;
-    border: 2px solid #9b8989;
-    font-family: 'Ubuntu', sans-serif;
-}
-.inp-text:hover{
-    box-shadow: 5px 8px 3px 3px #e9bac2;
-     cursor: pointer;
-     font-size:20px ;
-}
-#text-part{
-    padding-left: 7px;
-    margin: 25px 0px;
-}   
-#text-part:hover{
-     box-shadow: 3px 3px 3px 3px #e9bac2;
-     cursor: pointer;
-    
-    }
-#btn{
-    height: 37px;
-    width: 83px;
-    border-radius: 9px;
-    background: none;
-    color: white;
-    background-color: #e9bac2;
-    border: 2px solid white;
-}
-#btn:hover{
-    box-shadow: 2px 2px 2px 2px #e9bac2;
-    cursor: pointer;
-}
-@media  only screen and (max-width:1150px) {
-    .box{
-        width: 354px;
-        height: 58vh;
-    }
-    .inp-text{
-        width: 215px;
-    margin: 5px 0px;
-
-    }
-    #text-part{
-        height: 105px;
-
-    }
-}
-
